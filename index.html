@@ -45,6 +45,11 @@
   .chart-foot { flex-wrap: wrap; gap: 6px; }
   .chart-disclaimer { max-width: 100%; white-space: normal; text-align: right; }
 }
+@media (max-width: 760px) {
+  .ticker-tape { overflow-x: auto; overscroll-behavior-inline: contain; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+  .ticker-tape::-webkit-scrollbar { display: none; }
+  .ticker-tape > .index { flex: 0 0 auto; }
+}
 </style>
 <style>[hidden]{display:none!important}</style>
 </head>
