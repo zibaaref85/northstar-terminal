@@ -24,7 +24,7 @@ For a local setup, copy `.env.example` to `.env.local` and fill only the values 
 Northstar is a demo until its legal and commercial prerequisites are complete. Never add secrets to source control or browser code.
 
 - Market data remains blocked until a written public-display license is in place and `FINNHUB_API_KEY`, `MARKET_DATA_DISPLAY_RIGHTS_CONFIRMED=true`, and `MARKET_DATA_LICENSE_ID` are configured as server-side Vercel environment variables.
-- Account creation remains paused until counsel-approved policy versions, the compliance migration, and server-only Supabase credentials are configured.
+- Account creation remains paused until counsel-approved policy versions and server-only Supabase credentials are configured. The production schema and all three migrations are present and reconciled.
 - Billing and account deletion remain unavailable until their separate settings and reviews are complete. Sharing additionally requires an explicit sharing release flag, approved legal policy versions, a market-data display license, a separate sharing-content permission record, and the server-only Supabase secret key; the API checks this gate directly on reads, creation, and revocation.
 - SEC filings remain unavailable until a monitored SEC User-Agent contact is configured.
 - Current prices and news are illustrative sample data, not live information or investment advice.
@@ -33,7 +33,7 @@ The legal pages in `legal/` are drafts and need qualified counsel review before 
 
 ## Database schema
 
-The timestamped migration history and its setup notes are in `supabase/`. The first two production migrations were applied manually and remain absent from the migration ledger; the later foreign-key index migration is recorded there. Reconcile those original versions with the official Supabase migration repair workflow before using `db push`. `.vercelignore` keeps SQL setup files out of the public website while preserving them in the source tree.
+The timestamped migration history and setup notes are in `supabase/`. All three production migrations are now recorded in Supabase and match the local migration files; the two original versions were marked applied only after verifying their schemas, without rerunning their SQL. `.vercelignore` keeps SQL setup files out of the public website while preserving them in the source tree.
 
 ## Repository contents
 
