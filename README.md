@@ -33,7 +33,7 @@ The legal pages in `legal/` are drafts and need qualified counsel review before 
 
 ## Database schema
 
-The timestamped migration history and its setup notes are in `supabase/`. The production project already has these schemas applied, but its migration ledger was not initialized; reconcile production history before using the Supabase CLI. `.vercelignore` keeps SQL setup files out of the public website while preserving them in the source tree.
+The timestamped migration history and its setup notes are in `supabase/`. The first two production migrations were applied manually and remain absent from the migration ledger; the later foreign-key index migration is recorded there. Reconcile those original versions with the official Supabase migration repair workflow before using `db push`. `.vercelignore` keeps SQL setup files out of the public website while preserving them in the source tree.
 
 ## Repository contents
 
