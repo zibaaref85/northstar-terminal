@@ -4,6 +4,7 @@
 node_modules/
 .DS_Store
 *.log
+supabase/.temp/
 /COMPLIANCE-LAUNCH-CHECKLIST.md
 /FLORIDA-START-HERE.md
 /launch-guide.html
