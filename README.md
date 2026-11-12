@@ -2,6 +2,10 @@
 
 A static dashboard with Vercel serverless API routes for market data, SEC filings, Supabase account tools, and Stripe scaffolding.
 
+## Live demo
+
+Visit [Northstar Market Intelligence](https://northstar-market-intelligence-zeta.vercel.app/). It is a public, sample-data demo: market prices and stories are illustrative, not live data or investment advice.
+
 ## Local preview
 
 Use Node.js 24 and the Vercel CLI:
