@@ -1,3 +1,16 @@
 # Database schema and migration files belong in source control, not the public site.
 *.sql
 supabase/
+
+# Keep local project metadata and environment files out of deployment uploads.
+.vercel/
+.git/
+.env*
+node_modules/
+*.log
+.DS_Store
+
+# Private launch planning documents are not website content.
+/COMPLIANCE-LAUNCH-CHECKLIST.md
+/FLORIDA-START-HERE.md
+/launch-guide.html
